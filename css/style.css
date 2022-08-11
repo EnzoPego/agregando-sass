@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Alegreya', serif; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px; }
+
+@media (max-width: 768px) {
+  .navegacion-principal {
+    flex-direction: column;
+    text-align: center;
+    padding: 45px;
+    line-height: 45px; }
+  header {
+    display: flex;
+    flex-direction: column; } }
+
+.navegacion-principal {
+  display: flex; }
+  .navegacion-principal a {
+    font-size: 22px;
+    color: #ccc;
+    text-decoration: none;
+    padding: 0px 20px; }
+    .navegacion-principal a:hover {
+      color: aqua; }
+
+.titulo-informacion {
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 50px;
+  font-size: 35px;
+  color: #ccc; }
+
+.lista {
+  display: flex;
+  display: inline;
+  text-align: center;
+  color: #ccc;
+  font-size: 18px; }
+  .lista li {
+    font-size: 20px;
+    word-spacing: 3px;
+    line-height: 35px;
+    color: #ccc;
+    list-style: none; }
+    .lista li h3 {
+      font-size: 29px;
+      margin-top: 21px;
+      margin-bottom: 21px; }
+
+.footer-informacion {
+  text-align: center;
+  margin-top: 150px;
+  color: #ccc;
+  font-size: 18px;
+  background-color: black; }
+
+.back-informacion {
+  background-image: url(../img/back-informacion.jpg);
+  background-size: cover;
+  background-color: rgba(35, 35, 35, 0.9);
+  background-blend-mode: soft-light; }

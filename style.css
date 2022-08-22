@@ -106,15 +106,11 @@ h3 {
 
 }
 
-
-
 /* Contacto*/
-
-
 
 .back-contacto {
     background-image: url(./img/back-contacto.jpg);
-    background-color:rgb(50,50,50,.4);
+    background-color:rgba(50,50,50,.4);
     background-blend-mode: soft-light;
     background-size: cover;
 

@@ -7,49 +7,18 @@
 $colorPrincipal:#ccc;
 
 
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px; 
+
+.titulos{
+	font-size: 65px;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	color: white;
 }
+
 
 //informacion
 
-@media (max-width:768px ) {
-    .navegacion-principal  {
-        flex-direction: column;
-        text-align: center;  
-        padding: 45px;
-        line-height: 45px;        
-    }
-    header {
-        display: flex;
-        flex-direction: column;   
-    }    
-}
-
-.navegacion-principal {
-    display: flex;
-    a { 
-        font-size: 22px;
-        color:$colorPrincipal;
-        text-decoration: none;
-        padding: 0px 20px;
-        &:hover {
-            color: aqua;
-        }      
-    }
-}
-
-.titulo-informacion {
-    text-align: center;
-    margin-top: 120px;
-    margin-bottom: 50px;
-    font-size: 35px;
-    color:$colorPrincipal;
-}
 
 .lista {
     display: flex;
@@ -91,14 +60,6 @@ header {
 	background-blend-mode: soft-light;
 	background-size: cover;
 }
-.titulo-contacto {
-	font-size: 60px;
-	text-align: center;
-	margin-top: 100px;
-	margin-bottom: 50px;
-	color: white;
-	padding-bottom: 60px;
-}
 
 .formulario {
 	padding: 20px;
@@ -109,11 +70,12 @@ header {
 	}
 	legend {
 		text-align: center;
-		font-size: 22px;
+		font-size: 20px;
 		text-transform: uppercase;
 		margin-bottom: 20px;
 		color: white;
 		padding-bottom: 60px;
+		word-spacing: 6px;
 	}
 }
 .contenedor-campos {
@@ -139,7 +101,6 @@ header {
 .boton-enviar {
 	background-color: black;
 	color: white;
-	text-decoration: none;
 	text-transform: uppercase;
 	border-radius: 5px;
 	text-align: center;
@@ -184,13 +145,7 @@ header {
 
 //quienes somos
 
-.titulo-quienes-somos {
-	font-size: 35px;
-	text-align: center;
-	margin-top: 100px;
-	margin-bottom: 100px;
-	color: white;
-}
+
 .back-quienes-somos {
 	background-image: url(../img/back-quienes-somos.jpg);
 	background-color: rgb(60,60,60);
@@ -266,13 +221,6 @@ header {
 //catering y eventos 
 
 
-.titulo-catering {
-	font-size: 35px;
-	text-align: center;
-	margin-top: 100px;
-	margin-bottom: 50px;
-	color: white;
-}
 .back-index {
 	background-color: black;
 }
@@ -291,14 +239,8 @@ header {
 
 //nuestros servicios
 
-.titulo-nuestros-servicios {
-	font-size: 35px;
-	text-align: center;
-	margin-top: 100px;
-	margin-bottom: 100px;
-	color: white;
-  }
-  .contenido-li {
+
+.contenido-li {
 	color: white;
 	font-size: 20px;
 }
@@ -317,3 +259,4 @@ header {
 	background-blend-mode: soft-light;
 	background-size: cover;
 }
+

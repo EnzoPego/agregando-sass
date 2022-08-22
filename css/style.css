@@ -3,39 +3,12 @@
   padding: 0;
   font-family: 'Alegreya', serif; }
 
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px; }
-
-@media (max-width: 768px) {
-  .navegacion-principal {
-    flex-direction: column;
-    text-align: center;
-    padding: 45px;
-    line-height: 45px; }
-  header {
-    display: flex;
-    flex-direction: column; } }
-
-.navegacion-principal {
-  display: flex; }
-  .navegacion-principal a {
-    font-size: 22px;
-    color: #ccc;
-    text-decoration: none;
-    padding: 0px 20px; }
-    .navegacion-principal a:hover {
-      color: aqua; }
-
-.titulo-informacion {
+.titulos {
+  font-size: 65px;
   text-align: center;
-  margin-top: 120px;
-  margin-bottom: 50px;
-  font-size: 35px;
-  color: #ccc; }
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: white; }
 
 .lista {
   display: flex;
@@ -73,14 +46,6 @@ header {
   background-blend-mode: soft-light;
   background-size: cover; }
 
-.titulo-contacto {
-  font-size: 60px;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 50px;
-  color: white;
-  padding-bottom: 60px; }
-
 .formulario {
   padding: 20px;
   border-radius: 10px;
@@ -89,11 +54,12 @@ header {
     border: none; }
   .formulario legend {
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 20px;
     color: white;
-    padding-bottom: 60px; }
+    padding-bottom: 60px;
+    word-spacing: 6px; }
 
 .contenedor-campos {
   color: white;
@@ -116,7 +82,6 @@ header {
 .boton-enviar {
   background-color: black;
   color: white;
-  text-decoration: none;
   text-transform: uppercase;
   border-radius: 5px;
   text-align: center;
@@ -151,13 +116,6 @@ header {
     grid-column: 1 / 3; }
   .campo:nth-child(4) {
     grid-column: 1 / 3; } }
-
-.titulo-quienes-somos {
-  font-size: 35px;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  color: white; }
 
 .back-quienes-somos {
   background-image: url(../img/back-quienes-somos.jpg);
@@ -225,13 +183,6 @@ header {
     padding-bottom: 150px;
     justify-items: center; } }
 
-.titulo-catering {
-  font-size: 35px;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 50px;
-  color: white; }
-
 .back-index {
   background-color: black; }
 
@@ -245,13 +196,6 @@ header {
 @media (max-width: 768px) {
   .img-index {
     width: 100%; } }
-
-.titulo-nuestros-servicios {
-  font-size: 35px;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  color: white; }
 
 .contenido-li {
   color: white;

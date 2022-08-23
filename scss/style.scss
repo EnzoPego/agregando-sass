@@ -4,45 +4,51 @@
     font-family: 'Alegreya', serif;
 }
 
-$colorPrincipal:#ccc;
+
+$colores:(
+	'primario':rgb(201, 155, 5),
+	'secundario':rgb(173, 208, 226),
+	'terciario':rgb(243, 96, 96),
+);
+
+//variables
+
+$font-h1: 65px;
+$font-li: 22px;
+$font-menu:32px;
+$font-li-t:46px;
 
 
 
-.titulos{
-	font-size: 65px;
-	text-align: center;
-	margin-top: 100px;
-	margin-bottom: 100px;
-	color: white;
+$primario:rgb(201, 155, 5);
+
+@if $primario ==rgb(201, 155, 5) {
+	.titulos {
+		font-size: $font-h1;
+		text-align: center;
+	    margin-top: 120px;
+	    margin-bottom: 100px;
+		color: map-get($colores,primario);
+	}
 }
 
 
 //informacion
 
-
 .lista {
-    display: flex;
-    display: inline;
     text-align: center;
-    color:$colorPrincipal;
-    font-size: 18px;
+    color: map-get($colores,terciario);
+	margin-bottom: 100px;
     li {
-        font-size: 20px;
+        font-size: $font-li;
         word-spacing: 3px;
         line-height: 35px; 
-        color:$colorPrincipal;
+        color: map-get($colores,secundario);
         list-style: none;
-         
-        h3 {
-            font-size: 29px;
-            margin-top: 21px;
-            margin-bottom: 21px;
-        }
     }
     
 } 
 
-@import"footer";
 
 .back-informacion {
     background-image: url(../img/back-informacion.jpg);
@@ -56,7 +62,7 @@ $colorPrincipal:#ccc;
 
 .back-contacto {
 	background-image: url(../img/back-contacto.jpg);
-	background-color: rgba(50,50,50,.4);
+	background-color: rgba(50,50,50,.6);
 	background-blend-mode: soft-light;
 	background-size: cover;
 }
@@ -65,23 +71,25 @@ $colorPrincipal:#ccc;
 	padding: 20px;
 	border-radius: 10px;
 	margin: 0 auto;
-	fieldset {
+	fieldset { 
 		border: none;
 	}
 	legend {
 		text-align: center;
-		font-size: 20px;
+		font-size:$font-li;
 		text-transform: uppercase;
 		margin-bottom: 20px;
-		color: white;
+		color: map-get($colores,terciario);
 		padding-bottom: 60px;
 		word-spacing: 6px;
 	}
 }
+
 .contenedor-campos {
-	color: white;
-	font-size: 19px;
+	color: map-get($colores,secundario);
+	font-size:$font-li;
 }
+
 .campo {
 	margin-bottom: 10px;
 	label {
@@ -92,44 +100,40 @@ $colorPrincipal:#ccc;
 		height: 150px;
 	}
 }
+
 .input-text {
 	width: 100%;
 	border: none;
 	padding: 10px;
 	border-radius: 10px;
 }
+
+
 .boton-enviar {
 	background-color: black;
-	color: white;
+	color: map-get($colores,secundario);
 	text-transform: uppercase;
 	border-radius: 5px;
 	text-align: center;
 	text-decoration: none;
-	font-size: 20px;
+	font-size:$font-li;
 	margin-top: 40px;
 	padding: 10px 30px;
 	&:hover {
 		cursor: pointer;
-		color: yellow;
+		color: map-get($colores,terciario); 
 	}
 }
-.redes {
-	display: flex;
-	justify-content: center;
-	padding-top: 60px;
-	gap: 75px;
-}
-.footer-contacto {
-	text-align: center;
-	margin-top: 100px;
-	font-size: 18px;
-	color: white;
-	background-color: black;
-}
+
+
+@import 'scss/redes';
+
+
+
 @media (min-width: 768px) {
 	.contenedor-campos {
 		display: grid;
-		grid-template-columns: 50% 50%;
+		grid-template-columns: 45% 50%;
 		grid-template-rows: auto auto 200px;
 		column-gap: 30px;
 	}
@@ -152,15 +156,11 @@ $colorPrincipal:#ccc;
 	background-blend-mode: soft-light;
 	background-size: cover;
 }
-.article-flex {
-	text-align: center;
-}
+
 .contenido-principal {
-	color: white;
-	font-size: 20px;
-	text-align: center;
-	padding-bottom: 60px;
-	margin-top: 30px;
+	color: map-get($colores,secundario);
+	font-size:$font-li;
+	text-align: left;
 }
 .nav-grid {
 	display: grid;
@@ -168,54 +168,36 @@ $colorPrincipal:#ccc;
 	text-align: center;
 	padding-top: 100px;
 	padding-bottom: 60px;
-	gap: 50px;
 }
-.calidad {
-	font-size: 30px;
-	color: white;
-	ul{
-		font-size: 20px;
-	}
-}
-.pasion {
-	font-size: 30px;
-	color: white;
-	ul{
-		font-size: 20px;
-	}
-}
-.innovacion {
-	font-size: 30px;
-	color: white;
-	ul{
-		font-size: 20px;
-	}
-}
-.footer-quienes-somos {
-	text-align: center;
-	font-size: 18px;
-	color: white;
-	background-color: black;
-	margin-top: 120px;
-}
-@media (min-width:768px ) {
-	.article-flex {
-		display: flex;
-		flex-direction: row;
-		color: white;
-		font-size: 20px;
-		justify-content: center;
-		gap: 35px;
-	}
+
+@media (min-width:992px ) {
 	.nav-grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		gap: 30px;
-		color: white;
 		padding-top: 150px;
 		padding-bottom: 150px;
-		justify-items: center;
+		 
 	}
+}
+
+
+.calidad {
+	font-size: $font-li-t;
+	color: map-get($colores,terciario);
+	list-style: none;
+	ul{
+		font-size:$font-li;
+		color: map-get($colores,secundario);
+		list-style: none;
+	}
+}
+
+.innovacion  {
+	@extend .calidad;
+}
+
+.pasion {
+	@extend .calidad;
 }
 
 //catering y eventos 
@@ -223,39 +205,26 @@ $colorPrincipal:#ccc;
 
 .back-index {
 	background-color: black;
+	background-size: cover;
 }
-.footer-index {
-	text-align: center;
-	margin-top: 60px;
-	color: white;
-	font-size: 18px;
-	background-color: black;
-}
-@media (max-width:768px ) {
-	.img-index {
-		width: 100%;
-	}
-}
+
 
 //nuestros servicios
 
+.menu{
+	font-size: $font-menu;
 
-.contenido-li {
-	color: white;
-	font-size: 20px;
 }
 
-  
-  .footer-nuestros-servicios {
-	text-align: center;
-	margin-top: 100px;
-	font-size: 18px;
-	color: white;
-	background-color: black;
-  }
+
+.contenido-li {
+	color: map-get($colores, terciario);
+	font-size: $font-li;
+}
+
 .back-nuestros-servicios {
 	background-image: url(../img/back-nuestros-servicios.jpg);
-	background-color: rgba(50,50,50,.4);
+	background-color: rgba(50,50,50,.5);
 	background-blend-mode: soft-light;
 	background-size: cover;
 }

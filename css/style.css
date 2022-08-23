@@ -6,33 +6,20 @@
 .titulos {
   font-size: 65px;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 120px;
   margin-bottom: 100px;
-  color: white; }
+  color: #c99b05; }
 
 .lista {
-  display: flex;
-  display: inline;
   text-align: center;
-  color: #ccc;
-  font-size: 18px; }
+  color: #f36060;
+  margin-bottom: 100px; }
   .lista li {
-    font-size: 20px;
+    font-size: 22px;
     word-spacing: 3px;
     line-height: 35px;
-    color: #ccc;
+    color: #add0e2;
     list-style: none; }
-    .lista li h3 {
-      font-size: 29px;
-      margin-top: 21px;
-      margin-bottom: 21px; }
-
-.footer-informacion {
-  text-align: center;
-  margin-top: 150px;
-  color: #ccc;
-  font-size: 18px;
-  background-color: black; }
 
 .back-informacion {
   background-image: url(../img/back-informacion.jpg);
@@ -42,7 +29,7 @@
 
 .back-contacto {
   background-image: url(../img/back-contacto.jpg);
-  background-color: rgba(50, 50, 50, 0.4);
+  background-color: rgba(50, 50, 50, 0.6);
   background-blend-mode: soft-light;
   background-size: cover; }
 
@@ -54,16 +41,16 @@
     border: none; }
   .formulario legend {
     text-align: center;
-    font-size: 20px;
+    font-size: 22px;
     text-transform: uppercase;
     margin-bottom: 20px;
-    color: white;
+    color: #f36060;
     padding-bottom: 60px;
     word-spacing: 6px; }
 
 .contenedor-campos {
-  color: white;
-  font-size: 19px; }
+  color: #add0e2;
+  font-size: 22px; }
 
 .campo {
   margin-bottom: 10px; }
@@ -81,35 +68,29 @@
 
 .boton-enviar {
   background-color: black;
-  color: white;
+  color: #add0e2;
   text-transform: uppercase;
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 22px;
   margin-top: 40px;
   padding: 10px 30px; }
   .boton-enviar:hover {
     cursor: pointer;
-    color: yellow; }
+    color: #f36060; }
 
 .redes {
   display: flex;
   justify-content: center;
   padding-top: 60px;
-  gap: 75px; }
-
-.footer-contacto {
-  text-align: center;
-  margin-top: 100px;
-  font-size: 18px;
-  color: white;
-  background-color: black; }
+  gap: 50px;
+  padding-bottom: 90px; }
 
 @media (min-width: 768px) {
   .contenedor-campos {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 45% 50%;
     grid-template-rows: auto auto 200px;
     column-gap: 30px; }
   .campo:nth-child(3) {
@@ -123,93 +104,47 @@
   background-blend-mode: soft-light;
   background-size: cover; }
 
-.article-flex {
-  text-align: center; }
-
 .contenido-principal {
-  color: white;
-  font-size: 20px;
-  text-align: center;
-  padding-bottom: 60px;
-  margin-top: 30px; }
+  color: #add0e2;
+  font-size: 22px;
+  text-align: left; }
 
 .nav-grid {
   display: grid;
   grid-template-rows: 1fr;
   text-align: center;
   padding-top: 100px;
-  padding-bottom: 60px;
-  gap: 50px; }
+  padding-bottom: 60px; }
 
-.calidad {
-  font-size: 30px;
-  color: white; }
-  .calidad ul {
-    font-size: 20px; }
-
-.pasion {
-  font-size: 30px;
-  color: white; }
-  .pasion ul {
-    font-size: 20px; }
-
-.innovacion {
-  font-size: 30px;
-  color: white; }
-  .innovacion ul {
-    font-size: 20px; }
-
-.footer-quienes-somos {
-  text-align: center;
-  font-size: 18px;
-  color: white;
-  background-color: black;
-  margin-top: 120px; }
-
-@media (min-width: 768px) {
-  .article-flex {
-    display: flex;
-    flex-direction: row;
-    color: white;
-    font-size: 20px;
-    justify-content: center;
-    gap: 35px; }
+@media (min-width: 992px) {
   .nav-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    color: white;
     padding-top: 150px;
-    padding-bottom: 150px;
-    justify-items: center; } }
+    padding-bottom: 150px; } }
+
+.calidad, .innovacion, .pasion {
+  font-size: 46px;
+  color: #f36060;
+  list-style: none; }
+  .calidad ul, .innovacion ul, .pasion ul {
+    font-size: 22px;
+    color: #add0e2;
+    list-style: none; }
 
 .back-index {
-  background-color: black; }
+  background-color: black;
+  background-size: cover; }
 
-.footer-index {
-  text-align: center;
-  margin-top: 60px;
-  color: white;
-  font-size: 18px;
-  background-color: black; }
-
-@media (max-width: 768px) {
-  .img-index {
-    width: 100%; } }
+.menu {
+  font-size: 32px; }
 
 .contenido-li {
-  color: white;
-  font-size: 20px; }
-
-.footer-nuestros-servicios {
-  text-align: center;
-  margin-top: 100px;
-  font-size: 18px;
-  color: white;
-  background-color: black; }
+  color: #f36060;
+  font-size: 22px; }
 
 .back-nuestros-servicios {
   background-image: url(../img/back-nuestros-servicios.jpg);
-  background-color: rgba(50, 50, 50, 0.4);
+  background-color: rgba(50, 50, 50, 0.5);
   background-blend-mode: soft-light;
   background-size: cover; }

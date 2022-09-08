@@ -7,12 +7,12 @@
 
 
 $colores:(
-	'primario':rgb(201, 155, 5),
+	'primario':#cda45e,
 	'secundario':rgb(173, 208, 226),
 	'terciario':rgb(243, 96, 96),
 );
 
-///////  variables //////
+
 
 $font-h1: 65px;
 $font-li: 22px;
@@ -22,9 +22,9 @@ $font-li-t:46px;
 
 
 
-$primario:rgb(201, 155, 5);
+$primario:#cda45e;
 
-@if $primario ==rgb(201, 155, 5) {
+@if $primario ==#cda45e {
 	.titulos {
 		font-size: $font-h1;
 		text-align: center;
@@ -194,8 +194,8 @@ $primario:rgb(201, 155, 5);
 
 
 .t-chefs{
-	@extend .info-index;
-	font-size: $font-li-t;
+	@extend .titulos;
+	font-size:$font-li-t;
 
 }
 
@@ -248,17 +248,115 @@ $primario:rgb(201, 155, 5);
 	}
 }
 
-////////////  catering y eventos ///////////////// 
+////////////  index ///////////////// 
 
 
-.back-index {
-	background-color: black;
-	background-size: cover;
-}
+#hero {
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(39, 37, 34, 0.8);
+	overflow: hidden;
+	padding: 0;
+	.carousel-item {
+		width: 100%;
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	  }
 
-.info-index{
-	color: map-get($colores,primario);
-}
+  }
+  
+  #hero .carousel-item::before {
+	content: "";
+	background-color: rgba(12, 11, 10, 0.5);
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+  }
+  
+  #hero .carousel-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	.carousel-content{
+		text-align: center;
+	}
+  }
+  
+  
+  #hero h2 {
+	color: map-get($colores,secundario);
+	margin-bottom: 30px;
+	font-size:$font-li-t;
+  }
+  
+  #hero h2 span {
+	color:map-get($colores,primario)
+  }
+  
+  #hero p {
+	font-size: $font-li;
+	width: 80%;
+	margin: 0 auto 30px auto;
+	color: map-get($colores,secundario);
+  }
+  
+  #hero .carousel-inner .carousel-item {
+	transition-property: opacity;
+	background-position: center top;
+  }
+  
+  #hero .carousel-inner .carousel-item-next,
+  #hero .carousel-inner .carousel-item-prev,
+  #hero .carousel-inner .active.carousel-item-start,
+  #hero .carousel-inner .active.carousel-item-end {
+	left: 0;
+	//transform: translate3d(0, 0, 0);
+  }
+  
+  #hero .carousel-control-next-icon,
+  #hero .carousel-control-prev-icon {
+	background: none;
+	font-size: 30px;
+	line-height: 0;
+	width: auto;
+	height: auto;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 50px;
+	transition: 0.3s;
+	color: rgba(255, 255, 255, 0.5);
+	width: 54px;
+	height: 54px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  
+ @media (max-width: 768px) {
+	#hero h2 {
+	  font-size: $font-li-t;
+	}
+ }
+  
+  @media (min-width: 1024px) {
+	#hero p {
+	  width: 50%;
+	}
+  
+	#hero .carousel-control-prev,
+	#hero .carousel-control-next {
+	  width: 5%;
+	}
+  }
 
 /////////////  nuestros servicios   ////////////////
 

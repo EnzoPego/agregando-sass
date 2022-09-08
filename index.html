@@ -12,12 +12,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  
   <title>A La Parrilla</title>
+
 </head>
 
 <body class="back-index">
 
-  <header>
+ <header>
     <div class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
       <div class="container">
         <a href="./index.html"> <img src="./img/Captura-logo111-removebg-preview.png" alt="logo" ></a>
@@ -37,56 +41,60 @@
     </div>
   </header>
 
-  <section>
-    <div>
-      <h1 class="titulos">Catering y Eventos</h1>
-    </div>
-  </section>
+  <main id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-  <main class="container mb-5">
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img src="carousel/pizza-photography-wallpaper-wallpaper-499988676.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="carousel/1067917.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="carousel/mainPc_201911120924234163.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    </div>
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
-    <section class="container text-center py-5 info-index">
-      <h2>
-        A la Parrilla es un complejo de fiestas y eventos que ofrece servicios <br> integrales y exclusivos para vivir una experiencia inolvidable.
-      </h2>
-    </section>
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url(img/slide/slide-1.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>A La Parrilla</span> Restaurant , Catering y Eventos</h2>
+                <p class="animate__animated animate__fadeInUp ">Nuestra carta se compone de tapas y entradas frías o calientes, parrilla con los cortes premium de carnes rojas, blancas y cerdo, ensaladas y acompañamientos, pescados y mariscos, aves y carnes, arroces y pastas, y una sección de postres en donde se destacan el Panqueque con dulce del leche,  el flan, los helados artesanales, la Marquise de chocolate y el Don Pedro con escocés.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url(img/slide/slide-2.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Fiestas y Eventos Personalizados</h2>
+                <p class="animate__animated animate__fadeInUp">Nuestro objetivo es crear momentos inolvidables, cubriendo todas las necesidades de nuestros clientes e innovando continuamente para crear momentos únicos.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url(img/slide/slide-3.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Fiestas Infantiles</h2>
+                <p class="animate__animated animate__fadeInUp">Te ofrecemos una nueva propuesta para festejar cumpleaños infantiles, contamos  con un espacio diferente donde se conjuga la aventura, el deporte, la emoción y todos los detalles contemplados para hacer de tu día único e inolvidable. Nuestro equipo de animación profesional organizará el evento acorde a la edad y necesidades del anfitrión.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-next-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
   </main>
 
-  
+
+
   <footer>
     <div class="text-muted text-center navbar-dark bg-dark py-2">
         <div class="redes">
@@ -97,8 +105,10 @@
        <p>© 2022 A la Parrilla Inc. Todos los derechos reservados.</p>
     </div>
 </footer>
-   
-  <script src="bootstrap/js/bootstrap.js"></script>
+
+
+ <script src="assets/js/main.js"></script>   
+ <script src="bootstrap/js/bootstrap.js"></script>
 </body>
 
 </html>

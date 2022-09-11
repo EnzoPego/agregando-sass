@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="fiestas, eventos, casamientos, compleaños">
     <meta name="description" content="Somos una empresa seria y responable, contamos con los mejores profecionales">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,16 +38,16 @@
 
     <section>
         <div>
-            <h1 class="titulos">Quienes Somos</h1>
+            <h1 class="titulos" data-aos="fade-down">Quienes Somos</h1>
         </div>            
     </section>
 
     <article class="container">
         <div class="row py-5 mb-4">
             <div class="col-lg-6 text-left mb-5">
-                <img class="img-thumbnail" src="../img/chef.jpg" alt="imagen chef">
+                <img class="img-thumbnail" src="../img/chef.jpg" alt="imagen chef" data-aos="fade-right">
             </div>
-            <div class="col-lg-6 text-left contenido-principal">
+            <div class="col-lg-6 text-left contenido-principal" data-aos="fade-left">
                 <p>A La Parrilla  es una empresa que brinda servicio de Catering para cumpleaños, casamientos, agasajos, eventos corporativos y casuales.<br>
                 Propone también Diseño y Organización de eventos como servicio  suplementario. <br>
                 Tomamos las necesidades específicas de cada cliente y le ofrecemos <br> una solución personalizada.</p>
@@ -56,8 +57,8 @@
     </article>
 
 
-    <section>
-        <div class="container sec-calidad">
+    <section data-aos="zoom-in">
+        <div class="container sec-calidad ">
           <div class="row">
             <div class="col-lg-4 col-md-6 ">
                 <li class="calidad">Calidad
@@ -84,13 +85,13 @@
     <section class="chefs">
         <div class="container">
   
-          <div class="container py-5 text-center">
+          <div class="container py-5 text-center" data-aos="fade-up">
             <h2 class="t-chefs">
                 Nuestros Chefs Profecionales
             </h2>
           </div>
 
-          <div class="row">
+          <div class="row" data-aos="zoom-in">
   
             <div class="col-lg-4 col-md-6">
               <div class="miembro">
@@ -147,6 +148,12 @@
    </footer>
 
     <script src="../bootstrap/js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+     AOS.init({
+    duration: 1000,
+    });
+    </script>
   
 </body>
 </html>

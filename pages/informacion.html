@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="fiestas, eventos, casamientos, compleaños">
     <meta name="description" content="Brindamos nuestro servicio en todo el país, contamos con personal de sala de excelente nivel">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,11 +37,11 @@
 
     <section>
         <div>
-            <h1 class="titulos">Información</h1>
+            <h1 class="titulos" data-aos="fade-down">Información</h1>
         </div>            
     </section>
 
-    <article class="lista row text-center">
+    <article class="lista row text-center" data-aos="fade-up">
         <ul>
             <li>Elaboramos todo en el momento con productos de primerísima calidad.</li>
             <li>Brindamos nuestro servicio en todo el país.</li>
@@ -70,7 +71,14 @@
            <p>© 2022 A la Parrilla Inc. Todos los derechos reservados.</p>
         </div>
    </footer>
+   
     <script src="../bootstrap/js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+     AOS.init({
+       duration: 1000,
+     });
+   </script>
     
 </body>
 </html>

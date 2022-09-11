@@ -48,11 +48,11 @@
     border: none; }
   .formulario legend {
     text-align: center;
-    font-size: 22px;
-    text-transform: uppercase;
+    font-size: 32px;
     margin-bottom: 20px;
     color: #f36060;
     padding-bottom: 60px;
+    padding-top: 60px;
     word-spacing: 6px; }
 
 .contenedor-campos {
@@ -74,7 +74,6 @@
   border-radius: 10px; }
 
 .boton-enviar {
-  background-color: black;
   color: #add0e2;
   text-transform: uppercase;
   border-radius: 5px;
@@ -82,7 +81,8 @@
   text-decoration: none;
   font-size: 22px;
   margin-top: 40px;
-  padding: 10px 30px; }
+  padding: 10px 30px;
+  background-color: black; }
   .boton-enviar:hover {
     cursor: pointer;
     color: #f36060; }

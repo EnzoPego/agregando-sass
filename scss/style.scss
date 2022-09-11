@@ -21,6 +21,22 @@ $font-menu:32px;
 $font-li-t:46px;
 
 
+@mixin boton {
+	color: map-get($colores,secundario);
+	text-transform: uppercase;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+	font-size:$font-li;
+	margin-top: 40px;
+	padding: 10px 30px;
+	&:hover {
+		cursor: pointer;
+		color: map-get($colores,terciario); 
+	}
+	
+}
+
 
 $primario:#cda45e;
 
@@ -85,11 +101,11 @@ $primario:#cda45e;
 	}
 	legend {
 		text-align: center;
-		font-size:$font-li;
-		text-transform: uppercase;
+		font-size:$font-menu;
 		margin-bottom: 20px;
 		color: map-get($colores,terciario);
 		padding-bottom: 60px;
+		padding-top: 60px;
 		word-spacing: 6px;
 	}
 }
@@ -119,19 +135,8 @@ $primario:#cda45e;
 
 
 .boton-enviar {
+	@include boton();
 	background-color: black;
-	color: map-get($colores,secundario);
-	text-transform: uppercase;
-	border-radius: 5px;
-	text-align: center;
-	text-decoration: none;
-	font-size:$font-li;
-	margin-top: 40px;
-	padding: 10px 30px;
-	&:hover {
-		cursor: pointer;
-		color: map-get($colores,terciario); 
-	}
 }
 
 @media (min-width: 768px) {
@@ -319,7 +324,7 @@ $primario:#cda45e;
   #hero .carousel-inner .active.carousel-item-start,
   #hero .carousel-inner .active.carousel-item-end {
 	left: 0;
-	//transform: translate3d(0, 0, 0);
+	
   }
   
   #hero .carousel-control-next-icon,

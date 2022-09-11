@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="fiestas, eventos, casamientos, compleaños">
     <meta name="description" content="Comtamos con todo tipo de carnes, ensaladas, picadas bebidas y mas">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,15 +37,15 @@
 
     <section>
         <div>
-            <h1 class="titulos">Nuestros Servicios</h1>
+            <h1 class="titulos" data-aos="fade-down">Nuestros Servicios</h1>
         </div>            
     </section>
     
 
 
     <article class="container">
-        <div class="row py-5 mb-4">
-            <div class="col-md-6 text-left mb-5">
+        <div class="row py-5 mb-4" data-aos="fade-right">
+            <div class="col-md-6 text-left mb-5" >
                 <img class="pizza-foto  img-thumbnail" src="../img/pizza-m.jpg" alt="imagen pizza y tacos">
             </div>
             <div class="col-md-6 text-left">
@@ -67,7 +68,7 @@
             </div>            
         </div>
 
-        <div class="row py-5 mb-4 flex-row-reverse">
+        <div class="row py-5 mb-4 flex-row-reverse" data-aos="fade-left">
             <div class="col-md-6 text-center mb-5">
                 <img class="grand-grill img-fluid img-thumbnail" src="../img/grill.jpg" alt="imagen grand grill">
             </div>
@@ -83,7 +84,7 @@
             </div>   
         </div>
 
-        <div class="row py-5 mb-4">
+        <div class="row py-5 mb-4" data-aos="fade-right">
             <div class="col-md-6 text-left mb-5"> 
                 <img class="chivito-foto img-fluid img-thumbnail" src="../img/chivito.jpg" alt="imagen chivito">
             </div>
@@ -106,7 +107,7 @@
             </div>         
         </div>
 
-        <div class="row py-5 mb-4 flex-row-reverse">
+        <div class="row py-5 mb-4 flex-row-reverse" data-aos="fade-left">
             <div class="col-md-6 text-center mb-5">
                 <img class="mexican-deal-foto img-fluid img-thumbnail" src="../img/tacos.jpg" alt="imagen mexican deal">
             </div>
@@ -139,6 +140,12 @@
    </footer>
 
     <script src="../bootstrap/js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+          duration: 1000,
+        });
+      </script>
     
 </body>
 </html>
